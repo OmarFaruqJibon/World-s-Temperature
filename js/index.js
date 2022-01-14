@@ -3,7 +3,7 @@ const loadWeather  = () => {
     const searchText = seaechField.value;
     console.log(searchText);
     seaechField.value = '';
-    const url = `http://api.weatherapi.com/v1/current.json?key=4881936de53342dcbca133251221301&q=${searchText}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=4881936de53342dcbca133251221301&q=${searchText}&aqi=no`;
     
     fetch(url)
     .then(response => response.json())
