@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<!-- API KEY: 4881936de53342dcbca133251221301 -->
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .head-title{
+            text-align: center;
+            font-weight: 600;
+            color: white;
+            margin-top: 50px;
+        }
+        .city_name{
+            font-weight: 800;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="head-title">Find World's Temperature</h3>
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="search-field" class="form-control " placeholder="Enter location...">
+                <div class="input-group-append">
+                    <button onclick="loadWeather()" type="button" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+        <div id="temp-container"  class="weather-status text-white text-center">
+            
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
